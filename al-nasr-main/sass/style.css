@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@font-face {
+  font-family: alle;
+  src: url(../Allenoire\ Font.otf);
+}
+:root {
+  --primary-clr: #fde503;
+  --secondary-clr: #22558c;
+  --lblue: #49a6eb;
+  --dblue: #272a39;
+  --white: #fff;
+  --lgray: #c6c9cc;
+  --black: #000;
+  --alle: alle;
+  --opera: "Open Sans", sans-serif;
+  --tran: 0.3s all linear;
+  --border-radius: 10px;
+  --reg: 400;
+  --med: 500;
+  --semi: 600;
+  --bold: 700;
+  --max-width: 800px;
+  --number: 7;
+}
+
+::-moz-selection {
+  background-color: var(--white);
+  color: var(--secondary-clr);
+}
+
+::selection {
+  background-color: var(--white);
+  color: var(--secondary-clr);
+}
+
+body {
+  background: var(--white);
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--opera);
+  font-weight: var(--reg);
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #444ba3;
+  background-color: var(--black);
+  overflow: hidden;
+}
+.container .hori-line .line {
+  height: 0.8rem;
+  width: 100%;
+}
+.container .hori-line .line1 {
+  background-color: var(--black);
+}
+.container .hori-line .line2 {
+  background-color: #fde503;
+}
+.container .header {
+  padding: 1rem 10rem;
+  position: relative;
+}
+.container .header nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  position: relative;
+}
+.container .header nav .nav-logo {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  gap: 2rem;
+}
+.container .header nav .nav-logo img {
+  width: 3rem;
+}
+.container .header nav .nav-logo svg {
+  height: 4rem;
+}
+.container .header nav .nav-list {
+  display: grid;
+  place-items: center;
+}
+.container .header nav .nav-list ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  text-transform: capitalize;
+}
+.container .header nav .nav-list ul .active {
+  background: -webkit-linear-gradient(#fff, #fde503);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .header nav .nav-list ul li {
+  font-family: var(--alle);
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  color: var(--white);
+  transition: var(--tran);
+}
+.container .header nav .nav-list li:hover {
+  background: -webkit-linear-gradient(#fff, #fde503);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .header nav .nav-icons {
+  display: grid;
+  place-items: center;
+}
+.container .header nav .nav-icons ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.container .header nav .nav-icons ul li {
+  cursor: pointer;
+  background: -webkit-linear-gradient(#fff, #fde503);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: var(--tran);
+}
+.container .header nav .nav-icons ul li i {
+  font-size: 1em;
+}
+.container .header nav .nav-icons ul li:hover {
+  transform: scale(1.8);
+}
+.container .main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
+.container .main .article1 {
+  margin-top: 2rem;
+}
+.container .main .article1 h2 {
+  text-transform: uppercase;
+  font-family: var(--alle);
+  font-size: 4em;
+  background: -webkit-linear-gradient(#fff, #fde503);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .main .article1 .article-des {
+  width: 100%;
+  display: grid;
+}
+.container .main .article1 .article-des .in-article-des {
+  width: 80%;
+  color: white;
+}
+.container .main .article1 .article-des .in-article-des a {
+  text-decoration: underline;
+  color: #fde503;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  margin-top: 2rem;
+  text-transform: capitalize;
+  font-family: var(--alle);
+}
+.container .main .article2 {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  justify-content: end;
+  position: relative;
+}
+.container .main .article2 .name {
+  position: absolute;
+  color: lightgray;
+  font-size: 3em;
+  text-transform: capitalize;
+  font-family: var(--alle);
+  top: 20%;
+  left: 10%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.container .main .article2 .number {
+  font-size: 8em;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  background: -webkit-linear-gradient(#000, #fde503);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.5;
+}
+.container .main .article2 .rol-div {
+  display: flex;
+  position: relative;
+}
+.container .main .article2 .rol-div .rol-dimg {
+  position: relative;
+  z-index: 2;
+}
+.container .main .article2 .rol-div .rol-dimg img {
+  width: 105%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bottom-head {
+  padding: 1rem 0 0 10rem;
+  height: 220px;
+  width: 100%;
+  z-index: 10000000000;
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: 1rem;
+}
+.bottom-head .bottomhead-div:nth-child(1):before {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  position: absolute;
+  inset: 0;
+  z-index: 1000000;
+}
+.bottom-head .bottomhead-div:nth-child(1) {
+  box-shadow: none;
+  position: relative;
+  height: 12rem;
+  min-width: 15rem;
+  top: -5%;
+  max-width: 15rem;
+  background-image: url(../img/al-nassr.webp);
+  background-size: cover;
+  border-radius: 10%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  position: relative;
+  box-shadow: none;
+}
+.bottom-head .bottomhead-div:nth-child(1) i {
+  font-size: 1.5em;
+  background-color: var(--white);
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #000;
+}
+.bottom-head .bottomhead-div {
+  box-shadow: rgba(2, 2, 2, 0.9) 0px 7px 29px 0px;
+  border-radius: var(--border-radius);
+  background-color: rgba(34, 85, 140, 0.705);
+  padding: 1rem;
+}
+.bottom-head .bottomhead-div h3 {
+  font-family: var(--alle);
+  text-transform: capitalize;
+  font-size: 2em;
+  background: -webkit-linear-gradient(#fde503, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bottom-head .bottomhead-div p {
+  color: lightgray;
+}/*# sourceMappingURL=style.css.map */
